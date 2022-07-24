@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+</head>
+<body>
+    <!-- Slider -->
+    <section class="cont-slide">
+        <div class="slide fade">
+            <img src="img/CPU.jpg" alt="imagen1">
+        </div>
+        <div class="slide fade">
+            <img src="img/Code.jpg" alt="Imagen2">
+        </div>
+        <div class="slide fade">
+            <img src="img/Desktop.jpg" alt="Imagen3">
+        </div>
+        <div class="slide-btn">
+            <a href="" class="slide-previous" id="btn-previous"><</a>
+            <a href="" class="slide-next" id="btn-next">></a>
+        </div>
+        <div class="slide-position">
+            <span class="circle circle-active"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </section>
+
+    <!-- Contenedor principal-->
+    <section class="main">
+        <div class="main-cont cont-text">
+            <div class="text-info"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat nobis id quos pariatur, inventore sit illum deleniti earum autem, alias quis ipsum praesentium iste. Blanditiis aperiam, similique vero odio cum nam iure nostrum, accusamus sunt incidunt laborum? Aut impedit hic ex quod, officia exercitationem quas, veritatis pariatur qui laborum suscipit labore eum! Mollitia distinctio labore voluptatum, porro perferendis non.
+            </div>
+            <div class="text-info"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat nobis id quos pariatur, inventore sit illum deleniti earum autem, alias quis ipsum praesentium iste. Blanditiis aperiam, similique vero odio cum nam iure nostrum, accusamus sunt incidunt laborum? Aut impedit hic ex quod, officia exercitationem quas, veritatis pariatur qui laborum suscipit labore eum! Mollitia distinctio labore voluptatum, porro perferendis non.
+            </div>
+            <div class="text-info"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat nobis id quos pariatur, inventore sit illum deleniti earum autem, alias quis ipsum praesentium iste. Blanditiis aperiam, similique vero odio cum nam iure nostrum, accusamus sunt incidunt laborum? Aut impedit hic ex quod, officia exercitationem quas, veritatis pariatur qui laborum suscipit labore eum! Mollitia distinctio labore voluptatum, porro perferendis non.
+            </div>
+        </div>
+        <div class="main-cont cont-form">
+            <form action="#" id="form-contact">
+                <h2 class="form-title">Contacto</h2>
+                <input type="text" name="formName" id="formName" required placeholder="Nombre">
+                <input type="text" name="formLastname" id="formLastname" required placeholder="Apellido">
+                <input type="email" name="formEmail" id="formEmail" required placeholder="Correo Electronico">
+                <input type="text" name="formPhone" id="formPhone" required placeholder="Numero de telefono">
+                <input type="number" name="formAge" id="formAge" required placeholder="Edad">
+                <button type="submit" id="btn-submit">Contactar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Carousel de imagenes-->
+    <section class="cont-carousel">
+        <div class="carousel">
+            <div class="carousel-slide fade">
+                <img src="img/LagoAzul.jpg" alt="">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="img/CiudadAzul.jpg" alt="">
+            </div>  
+            <div class="carousel-slide fade">
+                <img src="img/DreamCityAzul.jpg" alt="">
+            </div>  
+            <div class="slide-btn">
+                <a href="" id="btn-carousel-previous"><</a>
+                <a href="" id="btn-carousel-next">></a>
+            </div>
+            <div class="slide-position">
+                <span class="line line-active"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventana Modal -->
+    <section class="modal" id="modal">
+        <div class="modal-cont modal-show" >
+            <div class="modal-cont-title">
+                <h2>Mensaje</h2>
+            </div>
+            <div class="modal-cont-message">
+                <p class="modal-message">
+                    Gracias por cotizar con nosotros <span id="modal-name"></span> <span id="modal-lastname"></span>, uno de nuestros ejecutivos te llamara al <span id="modal-phone"></span> y enviará un correo a <span id="modal-email"></span>
+                </p>
+                <button type="button" id="modal-btn-close">Cerrar</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer del sitio-->
+    <footer class="footer">
+        <div class="footer-item footer-logo">
+            <img class="logo-img" src="img/logocapsulecorp.png" alt="Imagen de empresa">
+        </div>
+        <div class="footer-item footer-links">
+            <h2 class="footer-title">Accesos directos</h2>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <a href="#">INFORMACIÓN</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#">NOSOTROS</a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#">CONTACTO</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-item footer-api">
+            <h2 class="footer-title">Valor de UF</h2>
+            <div class="footer-api-info">
+                <p>Dia: <span id="diaUf">Jueves 21-07-2022</span></p>
+                <p>Hora: <span id="horaActual">19:12:01</span></p>
+                <p>Valor UF: $<span id="valorUf"></span></p>
+            </div>
+        </div>
+        <div class="footer-item footer-copyright">
+            <h2 class="footer-title">Copyrigth</h2>
+            <div class="footer-copyright-content">
+                <p>Autor: Gary Sandoval</p>
+                <p>Github: <a href="https://github.com/G0dSilla" target="_blank">G0dSilla</a></p>
+                <p>Github: <a href="https://github.com/G0dSilla/LandingPage" target="_blank">Repositorio Landing page</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/locale/es-us.js"></script>
+    
+    <!-- Archivo Javascript -->
+    <script src="javascript/main.js"></script>
+</body>
+</html>
